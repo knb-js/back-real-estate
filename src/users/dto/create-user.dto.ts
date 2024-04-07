@@ -1,7 +1,12 @@
 export class CreateUserDto {
 
+    rut: number;
+    dv:string;
+    name?: string;
+    lastName?: string;
     email: string;
     password: string;
-    name?: string;
-    rut: number;
+    phone:string;
+    birthday: string;
+    
 }

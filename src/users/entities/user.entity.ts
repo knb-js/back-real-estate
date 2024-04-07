@@ -18,7 +18,7 @@ export class User {
     @Column({unique :true})
     phone: string;
 
-    @Column({unique :true})
+    @Column()
     birthday: string;
 
     @Column({unique :true, nullable: false})
@@ -29,6 +29,9 @@ export class User {
 
     @Column({default: 'user'})
     rol: string;
+
+    @Column({default: 'Y'})
+    active: string;
 
     @DeleteDateColumn()
     deletedAt:Date;
